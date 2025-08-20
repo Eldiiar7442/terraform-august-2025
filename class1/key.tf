@@ -1,0 +1,5 @@
+resource "aws_key_pair" "deployer" {
+  key_name   = "deployer-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC+GOfO6Ur55AWijmFMoiF+dp2hCG+mr4HHzdFBRJAGrh+lfla2XBcwabS7gOiafQEGFeNXOW+9OLjHYkrvbHruW+pQ5O92nE8Xf2RpBdEg6CjpYQ1coer23KT8A+aRuggzB6zV6II5LvnzVlhNGlGUQURf3tysLDaPcGnahxQPx2REXVRjFKCyFQRrMawpAimuAu9Bpwc/y7bRyrgdDisjHi7QlT7F9xC/lj+0eW7S4qGGg4wE9tLFmPsMOYZgraiEd0jpS+ofyd2pTyIAso/eIN7oNEkAu0lhKy2F0VKWRLc5FtThfxXDcJinHBuI6OuShy1kWqXUO5dD+pNDrSYW+DNOfqUU/cw8SQ/VtWMg61zuM7Rk/2FiwYbBFbz5ifqRmi8gzstL1L59ddM92knH+7jnTMg3ClEJh0VJitfxlI2q3AYGODPtDw1+ns/k2JoTzXzrFu8c8gVVTKrOklqs6X3yH7Twg8HewaUrRd4p4zovkIKjFczpd3eat8NzYus= ec2-user@ip-172-31-43-218.eu-west-2.compute.internal"
+}
+
