@@ -20,10 +20,8 @@ resource "aws_instance" "test" {
   associate_public_ip_address = true
   availability_zone = "us-east-1a" 
   key_name = aws_key_pair.deployer.key_name
-  subnet_id              = "subnet-033c8143413f5791c"   # твой subnet
-  vpc_security_group_ids = ["sg-0521c88ac581c1718"]     # твой security group
+  vpc_security_group_ids = [aws_security_group.allow_tls.id]
+  user_data = file("apache.sh") 
 
-  tags = {
-    Name = "Test-EC2-NVirginia"
-  }
+  tags = local.common_tags
 }
